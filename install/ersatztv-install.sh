@@ -15,8 +15,8 @@ update_os
 
 msg_info "Installing FFmpeg (Patience)"
 cd /usr/local/bin
-curl -fsSL "https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-amd64-static.tar.xz" -o $(basename "https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-amd64-static.tar.xz")
-$STD tar -xvf ffmpeg-release-amd64-static.tar.xz
+curl -fsSL "https://github.com/BtbN/FFmpeg-Builds/releases/download/autobuild-2025-03-31-12-55/ffmpeg-n6.1.2-27-ge16ff06adb-linux64-gpl-6.1.tar.xz" -o $(basename "https://github.com/BtbN/FFmpeg-Builds/releases/download/autobuild-2025-03-31-12-55/ffmpeg-n6.1.2-27-ge16ff06adb-linux64-gpl-6.1.tar.xz")
+$STD tar -xvf ffmpeg-n6.1.2-27-ge16ff06adb-linux64-gpl-6.1.tar.xz
 rm -f ffmpeg-*.tar.xz
 cd ffmpeg-*
 mv ffmpeg ffprobe /usr/local/bin/
